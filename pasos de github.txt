@@ -1,0 +1,124 @@
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (master)
+$ git branch newRama
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (master)
+$ git checkout 
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (master)
+$ git checkout newRama
+Switched to branch 'newRama'
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git add .
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git commit -m "subimos cambio a nueva rama"
+[newRama 6ae4240] subimos cambio a nueva rama
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 prueba.html
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git push -u origin newRama
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 280 bytes | 280.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'newRama' on GitHub by visiting:
+remote:      https://github.com/JorgeLeoMoyano/reentrega-Github-jorge-moyano/pull/new/newRama   
+remote:
+To https://github.com/JorgeLeoMoyano/reentrega-Github-jorge-moyano.git
+ * [new branch]      newRama -> newRama
+branch 'newRama' set up to track 'origin/newRama'.
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git status
+On branch newRama
+Your branch is up to date with 'origin/newRama'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/style.css
+        modified:   index.html
+        deleted:    prueba.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        css/animate.css
+        js/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git add .
+warning: LF will be replaced by CRLF in css/animate.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in js/wow.min.js.
+The file will have its original line endings in your working directory
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git commit -m "agregando animaciones a mi proyecto"
+[newRama 5f36280] agregando animaciones a mi proyecto
+ 5 files changed, 2812 insertions(+), 32 deletions(-)
+ create mode 100644 css/animate.css
+ create mode 100644 js/wow.min.js
+ delete mode 100644 prueba.html
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git push origin newRama
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 8.52 KiB | 1.70 MiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/JorgeLeoMoyano/reentrega-Github-jorge-moyano.git
+   6ae4240..5f36280  newRama -> newRama
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git status
+On branch newRama
+Your branch is up to date with 'origin/newRama'.
+
+nothing to commit, working tree clean
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git status
+On branch newRama
+Your branch is up to date with 'origin/newRama'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/style.css
+        modified:   index.html
+        modified:   paginas/alisados.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git add .
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git commit -m "agregamos animaciones y alisados.html"
+[newRama 2718344] agregamos animaciones y alisados.html
+ 3 files changed, 440 insertions(+), 63 deletions(-)
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)
+$ git push origin newRama
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.23 KiB | 571.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+To https://github.com/JorgeLeoMoyano/reentrega-Github-jorge-moyano.git
+   5f36280..2718344  newRama -> newRama
+
+leo@DESKTOP-8GH646V MINGW64 ~/Desktop/desafio bootstrap (newRama)

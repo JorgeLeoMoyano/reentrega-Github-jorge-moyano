@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -11,18 +11,27 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!--======wow.js=====-->
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--==========================================-->
     <!--css-->
     <link rel="stylesheet" href="css/style.css" />
-    <!--======-->
     <title>Debby alisados!</title>
   </head>
   <body>
     <!--==========================================-->
     <!--inicia nav-->
     <!--==========================================-->
-    <nav class="navbar navbar-expand-lg navbar-light colorNav fs-2 p-3" id="menu">
+    <nav
+      class="navbar navbar-expand-lg navbar-light colorNav fs-3 p-3"
+      id="menu"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <span class="fs-1 fw-bold"> Debby</span>
         </a>
         <button
@@ -47,22 +56,26 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                productos</a
+                Productos</a
               >
               <ul
-                class="dropdown-menu"
+                class="dropdown-menu colorSubnav"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Alisados</a></li>
-                <li><a class="dropdown-item" href="#">liquidos</a></li>
-                <li><a class="dropdown-item" href="#">cremosos</a></li>
+                <li>
+                  <a class="dropdown-item" href="paginas/alisados.html"
+                    >Alisados</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Liquidos</a></li>
+                <li><a class="dropdown-item" href="#">Cremosos</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">nosotros</a>
+              <a class="nav-link" href="#">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contacto</a>
+              <a class="nav-link" href="#">Contacto</a>
             </li>
           </ul>
         </div>
@@ -126,18 +139,15 @@
     <!--inicia intro-->
     <!--==========================================-->
     <section class="w-50 mx-auto text-center pt-5" id="intro">
-        <h1 class="p-3 fs-2 border-top border-3">Los mejores productos para el cuidado capilar!
-            <span class="text-danger">
-                Productos capilares
-            </span>
-        </h1>
-        <p class="p-3 fs-4" >
-            <span class="text-danger">
-                Debby alisados
-            </span>
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe fugiat fuga
-        </p>
+      <h1 class="p-3 fs-2 border-top border-3 wow fadeIn">
+        Los mejores productos para el cuidado capilar!
+        <span class="text-danger"> Productos capilares </span>
+      </h1>
+      <p class="p-3 fs-4 wow fadeIn">
+        <span class="text-danger wow fadeIn"> Debby alisados </span>
+        <br />
+        productos 100% puros traidos directos de fabrica
+      </p>
     </section>
     <!--==========================================-->
     <!--termina intro-->
@@ -145,60 +155,114 @@
     <!--inician los ejemplos-->
     <!--==========================================-->
     <section class="py-3">
-        <div class="container-fluid">
-            <div class="row">
-                <article class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 ">
-                    <img src="img/producto1.jpeg" alt="producto" class="w-100 rounded-3">
-                    <h2 class="text-center">alisados</h2>
-                </article>
-                <!--end box1-->
-                <article class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 ">
-                    <img src="img/producto2.jpeg" alt="producto" class="w-100 rounded-3">
-                    <h2 class="text-center">cremosos</h2>
-                </article>
-                <!--end box2-->
-                <article class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 ">
-                    <img src="img/producto1.jpeg" alt="producto" class="w-100 rounded-3">
-                    <h2 class="text-center">liquidos</h2>
-                </article>
-                <!--end box3-->
-                <article class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 ">
-                    <img src="img/producto3.jpeg" alt="producto" class="w-100 rounded-3">
-                    <h2 class="text-center">ampollas</h2>
-                </article>
-                <!--end box4-->
-            </div>
+      <div class="container-fluid wow bounce">
+        <div class="row">
+          <article
+            class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 transform shadow-lg p-3 mb-5 bg-body rounded"
+          >
+            <img
+              src="img/producto1.jpeg"
+              alt="producto"
+              class="w-100 rounded-3"
+            />
+            <h2 class="text-center wow fadeIn">Alisados</h2>
+          </article>
+          <!--end box1-->
+          <article
+            class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 transform shadow-lg p-3 mb-5 bg-body rounded"
+          >
+            <img
+              src="img/producto2.jpeg"
+              alt="producto"
+              class="w-100 rounded-3 sombra"
+            />
+            <h2 class="text-center wow fadeIn">Cremosos</h2>
+          </article>
+          <!--end box2-->
+          <article
+            class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 transform shadow-lg p-3 mb-5 bg-body rounded"
+          >
+            <img
+              src="img/producto1.jpeg"
+              alt="producto"
+              class="w-100 rounded-3"
+            />
+            <h2 class="text-center wow fadeIn">liquidos</h2>
+          </article>
+          <!--end box3-->
+          <article
+            class="col-sm-12 col-md-6 col-lg-3 pb-sm-3 transform shadow-lg p-3 mb-5 bg-body rounded"
+          >
+            <img
+              src="img/producto3.jpeg"
+              alt="producto"
+              class="w-100 rounded-3"
+            />
+            <h2 class="text-center wow fadeIn">Ampollas</h2>
+          </article>
+          <!--end box4-->
         </div>
+      </div>
     </section>
     <!--==========================================-->
     <!--termina ejemplos-->
     <!--==========================================-->
     <!--inician form-->
     <!--==========================================-->
+    <div class="colorFondo">
     <div class="mb-3 m-3">
-        <h2 class="text-center">Contacto</h2>
-  <label for="exampleFormControlInput1" class="form-label ">ingrese su mail</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@mail.com">
-</div>
-<div class="mb-3 m-3">
-  <label for="exampleFormControlTextarea1" class="form-label">deje su consulta</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <button type="submit" class="btn btn-danger m-2">enviar</button>
-</div>
+      <h2 class="text-center">Contacto</h2>
+      <label for="exampleFormControlInput1" class="form-label"
+        >ingrese su mail</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="nombre@mail.com"
+      />
+    </div>
+    <div class="mb-3 m-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >deje su consulta</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+      <button type="submit" class="btn btn-danger m-2">enviar</button>
+    </div>
+    </div>
 
     <!--==========================================-->
     <!--termina form-->
     <!--==========================================-->
     <!--inician footer-->
     <!--==========================================-->
-    <footer>
-        <h3 class="text-center">Siguenos en nuestras redes!</h3>
-        <a href="www.facebook.com">
-            <img src="img/facebook.png" alt="facebook">
-        </a>
-        <a href="www.twitter.com" class=>
-            <img src="img/twitter.png" alt="twitter">
-        </a>
+
+    <footer class="bg-light text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a href="http://www.facebook.com" alt="blank">
+            <img src="img/facebook.png" alt="facebook" />
+          </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/" target="_blank">
+            <img src="img/twitter.png" alt="twitter" />
+          </a>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3 colorNav"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2022 Copyright:
+        <h3>Debby alisados</h3>
+      </div>
+      <!-- Copyright -->
     </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
