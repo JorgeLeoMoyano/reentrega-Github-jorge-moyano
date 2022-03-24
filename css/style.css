@@ -10,11 +10,12 @@
 /*===============MENU================*/
 
 .colorNav {
-  background-color: rgba(230, 102, 98, 0.712);
+    background: rgb(255,9,9);
+    background: linear-gradient(90deg, rgba(255,9,9,0.8365721288515406) 54%, rgba(232,191,12,1) 95%, rgba(255,156,0,1) 100%);
 }
 
 #menu a {
-    color:rgb(128, 9, 9);
+    color:rgb(34, 15, 15);
 }
 
 #menu a span {
@@ -58,3 +59,15 @@
             width:90% !important;
         }
     }
+
+    /*=========================ANIMACIONES================================*/
+
+
+    .transform:hover{
+        transform:translateY(-20px);
+        -webkit-transform:translateY(-20px);
+        -moz-transform:translateY(-20px);
+        -ms-transform:translateY(-20px);
+        -o-transform:translateY(-20px);
+        cursor:pointer;
+}
