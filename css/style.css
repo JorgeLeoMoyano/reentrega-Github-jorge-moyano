@@ -1,0 +1,60 @@
+/*===============Propiedades Globales================*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Mono:ital@1&display=swap');* {
+    font-family: 'Red Hat Mono', monospace;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+/*===============MENU================*/
+
+.colorNav {
+  background-color: rgba(230, 102, 98, 0.712);
+}
+
+#menu a {
+    color:rgb(128, 9, 9);
+}
+
+#menu a span {
+    font-family:Pacifico;
+}
+    
+
+/*===============SLIDER DE IMAGENES================*/
+
+.carousel-inner{
+    max-height: 30rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+    @media (max-width:768px){
+        #intro{
+            width:90% !important;
+        }
+    }
